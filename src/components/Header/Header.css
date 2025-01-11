@@ -1,6 +1,8 @@
 .header {
   position: relative;
-  padding-block: var(--spacing-300);
+  padding-block: var(--spacing-200);
+  background-color: var(--clr-white);
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 47.99em) {

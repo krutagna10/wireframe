@@ -1,0 +1,14 @@
+.sidebar {
+  background-color: var(--clr-white);
+  padding-inline: 1.5rem;
+  height: 90vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__btn {
+  cursor: pointer;
+}

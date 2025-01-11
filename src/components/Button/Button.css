@@ -1,0 +1,46 @@
+.btn {
+  display: block;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  width: 10rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: var(--fs-200);
+  font-weight: 700;
+}
+
+.btn--green {
+  border: 1px solid transparent;
+  background-color: var(--clr-green);
+  color: var(--clr-white);
+}
+
+.btn--green:hover {
+  border-color: var(--clr-green);
+  background-color: transparent;
+  color: var(--clr-green);
+}
+
+.btn--red {
+  border: 1px solid transparent;
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+}
+
+.btn--red:hover {
+  border-color: var(--clr-red);
+  background-color: transparent;
+  color: var(--clr-red);
+}
+
+.btn--yellow {
+  border: 1px solid transparent;
+  background-color: var(--clr-yellow);
+  color: var(--clr-white);
+}
+
+.btn--yellow:hover {
+  border-color: var(--clr-yellow);
+  background-color: transparent;
+  color: var(--clr-yellow);
+}
