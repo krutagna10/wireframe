@@ -1,24 +1,31 @@
-import Button from "../Button/Button.tsx";
 import "./Artwork.css";
 
 interface ArtworkProps {
-  id: string;
-  image: string;
-  title: string;
-  price: number;
+  artwork: {
+    name: string;
+    year: number;
+    description: string;
+    source: string;
+    artist: {
+      image: string;
+      name: string;
+    };
+    images: {
+      thumbnail: string;
+      hero: {
+        small: string;
+        large: string;
+      };
+      gallery: string;
+    };
+  };
 }
 
-function Artwork({ title, image, price }: ArtworkProps) {
+function Artwork({ artwork }: ArtworkProps) {
   return (
     <div className="artwork">
       <div>
-        <img src={image} alt={title} />
-      </div>
-      <div>
-        <p>{title}</p>
-        <p>{price}</p>
-        <Button className="btn--yellow">View</Button>
-        <Button className="btn--green">Add to Cart</Button>
+        <img src={artwork.images.gallery} alt={artwork.name} />
       </div>
     </div>
   );
